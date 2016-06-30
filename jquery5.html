@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+<script type='text/javascript'>
+$(document).ready(function(){
+$(':text').blur(function(){
+$("#MostrarTexto").text('Has perdido el foco del text');
+
+});
+});
+</script>
+</head>
+
+<body>
+<form>
+<input id="field1" type="text" value="Field 1">
+<input id="field2" type="text" value="Field 2">
+<div id="MostrarTexto">
+</form>
+</div>
+
+</body>
+</html>

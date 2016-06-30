@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+<script type='text/javascript'>
+
+$(document).ready(function(){
+	$("input").change(function(){
+		alert(document.getElementById("demo").innerHTML="HAS CAMBIADO EL TEXTO");
+});	
+});
+
+</script>
+</head>
+<body>
+  <form  name='demo_form'>
+  First name: <input type="text" value="name"><br>
+  Last name: <input type="text" value="namel"><br>
+  <input type="submit" value="Submit">
+
+</form>
+<P id="demo"></P>
+</body>
+</html>
